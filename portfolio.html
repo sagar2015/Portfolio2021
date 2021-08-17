@@ -106,13 +106,56 @@
         /* ----------------------MAIN CONTENT ----------------------------- */
         
         .home_page {
+            display: flex;
+            /* margin-bottom: 5%; */
+            height: 600px;
+        }
+        
+        .home_page_img {
+            width: 30%;
+            height: 500px;
+        }
+        
+        .name_container {
+            width: 70%;
+            height: 500px;
+        }
+        
+        .name_container h2 {
+            font-family: 'Train One', cursive;
+            font-size: 50px;
+        }
+        
+        .name_container .hello {
+            margin-top: 5%;
+            margin-left: 10%;
+            color: darkcyan;
+        }
+        
+        .name_container .iam {
+            margin-top: 10%;
+            margin-left: 20%;
+            color: coral;
+        }
+        
+        .name_container .sagar {
+            margin-top: 15%;
+            margin-left: 25%;
+            color: green;
+        }
+        
+        .home_page_img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10%;
+        }
+        /* .content-side .home_page {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column-reverse;
-        }
-        
-        .home_page h2 {
+        } */
+        /* .home_page h2 {
             margin: 50px 70px;
             font-size: 50px;
             font-family: 'Train One', cursive;
@@ -131,28 +174,25 @@
             font-size: 50px;
             font-family: 'Train One', cursive;
             color: teal;
-        }
-        
-        .name {
+        } */
+        /* .name {
             display: flex;
             flex-direction: column;
-        }
-        
-        .main-image {
+        } */
+        /* .main-image {
             display: flex;
             flex-direction: row-reverse;
             /* position: absolute;
             top: 5%;
-            right: 5%; */
+            right: 5%; 
             float: right;
-        }
-        
-        .main-image img {
+        } */
+        /* .main-image img {
             width: 25%;
             height: auto;
             height: 400px;
             border-radius: 10%;
-        }
+        } */
         
         .who-am-i {
             background-color: black;
@@ -398,11 +438,12 @@
         .img_box {
             height: 250px;
             width: 300px;
-            border: 2px solid black;
+            border: 1px solid black;
             border-radius: 10px;
             box-sizing: border-box;
-            margin: 10px;
+            margin: 15px;
             overflow: hidden;
+            box-shadow: 0 0 5px 1px rgb(108, 182, 108);
         }
         
         .portfolio .project .img_box img {
@@ -494,27 +535,34 @@
                 font-size: 30px;
                 padding: 5px 20px;
             }
-            .main-image img {
+            .home_page {
                 width: 100%;
+                height: auto;
+                margin-bottom: 10%;
+                flex-wrap: wrap;
+            }
+            .home_page .home_page_img img {
+                width: auto;
                 opacity: 50%;
+                height: 500px;
+                margin: 0px 20%;
+                order: 1;
+            }
+            .home_page .name_container {
+                width: 100%;
+                order: 2;
+                margin-top: 10%;
                 height: auto;
             }
-            .name h2 {
-                color: blue;
-                margin: auto;
-            }
-            .name h3 {
-                color: crimson;
-                margin: auto;
-            }
-            .name h4 {
-                color: rgb(6, 175, 96);
-                margin: auto;
-                font-size: 45px;
+            .home_page .name_container h2 {
+                font-size: 35px;
+                margin: 10px;
+                text-align: center;
             }
             .who-am-i {
                 width: 100%;
                 margin-top: 20px;
+                margin-bottom: 10%;
             }
             .who-am-i h1 {
                 margin-top: 10px;
@@ -536,6 +584,7 @@
             }
             .portfolio {
                 width: 100%;
+                margin-bottom: 10%;
             }
             .portfolio h1 {
                 color: black
@@ -543,16 +592,10 @@
             .resume {
                 width: 100%;
                 position: relative;
-                top: 80%;
+                top: 65%;
             }
             .qualification .quali_box {
-                width: 90%;
-            }
-            .resume .qualification .quali_box p {
-                width: 90%;
-                /* font-size: 20px; */
-                margin: 0;
-                padding: 0;
+                width: 100%;
             }
         }
     </style>
@@ -594,8 +637,8 @@
             </ul>
         </nav>
         <footer>
-            <a href="https://m.facebook.com/sagar.patel.161214"><i class="fab fa-facebook-f "></i></a>
-            <a href="https://www.linkedin.com/public-profile/settings"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f "></i></a>
+            <a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter "></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram "></i></a>
         </footer>
     </div>
@@ -603,14 +646,15 @@
 
         <!-- ------------------------------------HOME PAGE----------------------------------------- -->
         <section id="home">
+
             <div class="home_page">
-                <div class="name">
-                    <h2>Hello</h2>
-                    <h3>I'm</h3>
-                    <h4>Sagarkumar Patel</h4>
+                <div class="name_container">
+                    <h2 class="hello">Hello</h2>
+                    <h2 class="iam">I am</h2>
+                    <h2 class="sagar">Sagarkumar Patel</h2>
                 </div>
-                <div class="main-image">
-                    <img src="Images/Navigation_img.jpg ">
+                <div class="home_page_img">
+                    <img src="Images/Navigation_img.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -691,7 +735,9 @@
 
             <h1> <span><i class="fas fa-toolbox"></i></span> Portfolio</h1>
             <div class="project">
+
                 <div class="img_box">
+
                     <a href="https://sagar2015.github.io/3D-Animation/3d_animation_img.html"><img src="./Images/3D-Animation.PNG" alt=""></a>
                 </div>
                 <div class="img_box">
