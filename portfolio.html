@@ -262,7 +262,7 @@
         
         .skills-container {
             width: 90%;
-            height: 60%;
+            height: auto;
             border: 2px solid green;
             border-radius: 10px;
             margin: auto;
@@ -415,6 +415,26 @@
         }
         
         .skills-bar .sql h5 {
+            float: right;
+            position: relative;
+            transform: translateY(-60%);
+            font-size: 20px;
+        }
+        
+        .skills-bar .jquery {
+            height: 100%;
+            width: 65%;
+            background: rgb(59, 201, 130);
+        }
+        
+        .skills-bar .jquery h4 {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 5px;
+        }
+        
+        .skills-bar .jquery h5 {
             float: right;
             position: relative;
             transform: translateY(-60%);
@@ -731,6 +751,14 @@
                 <div class="sql">
                     <h4>SQL</h4>
                     <h5>90%</h5>
+                </div>
+            </div>
+
+
+            <div class="skills-bar">
+                <div class="jquery">
+                    <h4>Jquery</h4>
+                    <h5>65%</h5>
                 </div>
             </div>
         </div>
